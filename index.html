@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 	<div class="calc-bmi-page">
 		<h3>User Information</h3>
@@ -24,31 +26,48 @@
 					<h5>Female</h5>
 				</div>
 			</div>
-			<div class="height">
-				<div class="height-heading">
-					<h5>HEIGHT</h5>
-					<h5>CM</h5>
+		</div>
+		<div class="height">
+			<div class="height-heading">
+				<h5>HEIGHT</h5>
+				<h5>CM</h5>
+			</div>
+			<div class="height-input-container">
+				<form>
+					<div class="height-input">
+						<input type="text" id="height" name="height" placeholder="Enter your height">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="age-weight">
+			<div class="age-weight-heading">
+				<div class="age-heading">
+					<h5>AGE</h5>
 				</div>
-				<div class="height-input-container">
-					<form>
-						<div class="height-input">
-							<input type="text" id="height" name="height" placeholder="Enter your height">
-						</div>
-					</form>
+				<div class="weight-heading">
+					<h5>WEIGHT</h5>
+					<h5>KG</h5>
 				</div>
 			</div>
-			<div class="age-weight">
-				<div class="age-weight-heading">
-					<div class="age-heading">
-						<h5>AGE</h5>
+			<div class="age-weight-container">
+				<div class="age-box">
+					<input type="number" id="age" name="age" placeholder="Age">
+					<div class="arrow-btns">
+						<button class="down-arrow">▼</button>
+						<button class="up-arrow">▲</button>
 					</div>
-					<div class="weight-heading">
-						<h5>WEIGHT</h5>
-						<h5>KG</h5>
+				</div>
+				<div class="weight-box">
+					<input type="number" id="weight" name="weight" placeholder="Weight">
+					<div class="arrow-btns">
+						<button class="down-arrow">▼</button>
+						<button class="up-arrow">▲</button>
 					</div>
 				</div>
 			</div>
 		</div>
+		<button class="calc-bmi-btn">Calculate BMI ▶</button>
 	</div>
 
 
@@ -62,4 +81,5 @@
 
 	<script src="script.js"></script>
 </body>
+
 </html>
