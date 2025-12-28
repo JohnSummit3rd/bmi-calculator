@@ -28,6 +28,10 @@ h5 {
 	display: none;
 }
 
+.active-border {
+	border: 4px solid #8a84e2;
+}
+
 /*
 ===========================
 GENDER SECTION PROPERTIES
@@ -67,6 +71,12 @@ GENDER SECTION PROPERTIES
 	border-radius: 0.5em;
 	width: 45%;
 	height: 65%;
+}
+
+.male:hover,
+.female:hover {
+	cursor: pointer;
+	transform: scale(1.1);
 }
 
 /*
@@ -183,6 +193,12 @@ AGE & WEIGHT SECTION PROPERTIES
 	background-color: #d6d3f8;
 }
 
+.down-arrow:hover,
+.up-arrow:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
 /*
 ===========================
 CALCULATE SECTION PROPERTIES
@@ -198,6 +214,11 @@ CALCULATE SECTION PROPERTIES
 	color: white;
 	font-weight: 600;
 	border-radius: 0.5em;
+}
+
+.calc-bmi-btn:hover {
+	cursor: pointer;
+	transform: scale(1.05);
 }
 
 /*
@@ -325,6 +346,11 @@ RESULTS INFO PROPERTIES
 	color: white;
 	font-weight: 600;
 	border-radius: 0.5em;
+}
+
+.edit-info-btn:hover {
+	cursor: pointer;
+	transform: scale(1.05);
 }
 
 @media (min-width: 768px) {
