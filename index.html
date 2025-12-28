@@ -12,7 +12,7 @@
 </head>
 
 <body>
-	<div class="calc-bmi-page hidden">
+	<div class="calc-bmi-page">
 		<h3>User Information</h3>
 		<div class="gender">
 			<h5>GENDER</h5>
@@ -35,7 +35,7 @@
 			<div class="height-input-container">
 				<form>
 					<div class="height-input">
-						<input type="number" id="height" name="height" placeholder="Height">
+						<input type="number" id="height" name="height">
 					</div>
 				</form>
 			</div>
@@ -52,14 +52,14 @@
 			</div>
 			<div class="age-weight-container">
 				<div class="age-box">
-					<input type="number" id="age" name="age" placeholder="Age">
+					<input type="number" id="age" name="age">
 					<div class="arrow-btns">
 						<button class="down-arrow">▼</button>
 						<button class="up-arrow">▲</button>
 					</div>
 				</div>
 				<div class="weight-box">
-					<input type="number" id="weight" name="weight" placeholder="Weight">
+					<input type="number" id="weight" name="weight">
 					<div class="arrow-btns">
 						<button class="down-arrow">▼</button>
 						<button class="up-arrow">▲</button>
@@ -69,12 +69,12 @@
 		</div>
 		<button class="calc-bmi-btn">Calculate BMI ▶</button>
 	</div>
-	<div class="results-bmi-page">
+	<div class="results-bmi-page hidden">
 		<h3>BMI Calculator</h3>
 		<section class="result">
 			<h5>YOUR BMI</h5>
 			<div class="result-display">
-				<img src="assets/semicircleblue.svg" alt="semicircle">
+				<img src="assets/semicircleblue.svg" alt="semicircle" id="semicircle-img">
 				<div class="bmi-text">
 					<h3>18.0</h3>
 					<p>UNDERWEIGHT</p>

@@ -69,11 +69,6 @@ GENDER SECTION PROPERTIES
 	height: 65%;
 }
 
-/* #male-img,
-#female-img {
-	fill: #8a84e2;
-} */
-
 /*
 ===========================
 HEIGHT SECTION PROPERTIES
@@ -88,6 +83,11 @@ HEIGHT SECTION PROPERTIES
 .height-heading {
 	display: flex;
 	justify-content: space-between;
+	margin-top: 1em;
+}
+
+.height-heading h5 {
+	font-weight: 600;
 }
 
 .height-input-container {
@@ -100,7 +100,7 @@ HEIGHT SECTION PROPERTIES
 	font-size: 1rem;
 	border: none;
 	border-radius: 0.5em;
-	margin-top: 1em;
+	margin-top: 0.5em;
 	text-align: center;
 	font-size: 1.5em;
 	font-weight: 700;
@@ -112,6 +112,15 @@ HEIGHT SECTION PROPERTIES
 AGE & WEIGHT SECTION PROPERTIES
 ================================
 */
+
+.age-weight {
+	width: 100%;
+	height: 25%;
+}
+
+.age-weight-heading {
+	margin-top: 1em;
+}
 
 .age-weight-heading,
 .age-weight-container {
@@ -126,14 +135,14 @@ AGE & WEIGHT SECTION PROPERTIES
 	flex: 1;
 }
 
-.age-heading {
-	margin-top: 1em;
-}
-
 .weight-heading {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 1em;
+}
+
+.age-heading h5,
+.weight-heading h5 {
+	font-weight: 600;
 }
 
 .age-box,
@@ -141,7 +150,7 @@ AGE & WEIGHT SECTION PROPERTIES
 	background-color: white;
 	border-radius: 0.5em;
 	padding: 0.8rem;
-	margin-top: 1em;
+	margin-top: 0.5em;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -183,7 +192,7 @@ CALCULATE SECTION PROPERTIES
 .calc-bmi-btn {
 	width: 100%;
 	height: 5%;
-	margin-top: 15em;
+	margin-top: 6em;
 	border: none;
 	background-color: #8a84e2;
 	color: white;
@@ -206,6 +215,10 @@ RESULTS BMI PAGE PROPERTIES
 	width: 100%;
 	height: 20%;
 	margin-top: 1.75em;
+}
+
+.result h5 {
+	font-weight: 600;
 }
 
 .result-display {
@@ -251,6 +264,10 @@ DETAILED RESULTS PROPERTIES
 
 .detailed-results {
 	margin-top: 3em;
+}
+
+.detailed-results h5 {
+	font-weight: 600;
 }
 
 .details {
@@ -308,4 +325,75 @@ RESULTS INFO PROPERTIES
 	color: white;
 	font-weight: 600;
 	border-radius: 0.5em;
+}
+
+@media (min-width: 768px) {
+
+	html,
+	body {
+		height: 100%;
+	}
+
+	body {
+		background-color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.calc-bmi-page,
+	.results-bmi-page {
+		max-width: 420px;
+		margin: 0 auto;
+		background-color: #f0f0f0;
+		height: 850px;
+		border-radius: 0.5em;
+	}
+
+	h3 {
+		font-size: 1.4rem;
+	}
+
+	h5 {
+		font-size: 0.9rem;
+	}
+
+	.gender {
+		height: auto;
+	}
+
+	.male,
+	.female {
+		height: 8em;
+	}
+
+	.height-input input[type="number"],
+	.age-box input[type="number"],
+	.weight-box input[type="number"] {
+		font-size: 1.7rem;
+	}
+
+	.calc-bmi-btn,
+	.edit-info-btn {
+		height: 3.2em;
+		font-size: 1rem;
+	}
+
+	.bmi-text h5,
+	.bmi-text p {
+		font-size: 0.9rem;
+	}
+
+	.result {
+		height: auto;
+	}
+
+	.result-display {
+		height: 12em;
+	}
+
+	.info p,
+	.details p {
+		font-size: 0.9rem;
+	}
 }
