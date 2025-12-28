@@ -12,17 +12,17 @@
 </head>
 
 <body>
-	<div class="calc-bmi-page">
+	<div class="calc-bmi-page hidden">
 		<h3>User Information</h3>
 		<div class="gender">
 			<h5>GENDER</h5>
 			<div class="select-gender">
 				<div class="male">
-					<img src="assets/man.svg" alt="Male">
+					<img id="male-img" src="assets/man.svg" alt="Male">
 					<h5>Male</h5>
 				</div>
 				<div class="female">
-					<img src="assets/woman.svg" alt="Female">
+					<img id="female-img" src="assets/woman.svg" alt="Female">
 					<h5>Female</h5>
 				</div>
 			</div>
@@ -35,7 +35,7 @@
 			<div class="height-input-container">
 				<form>
 					<div class="height-input">
-						<input type="text" id="height" name="height" placeholder="Enter your height">
+						<input type="number" id="height" name="height" placeholder="Height">
 					</div>
 				</form>
 			</div>
@@ -69,12 +69,51 @@
 		</div>
 		<button class="calc-bmi-btn">Calculate BMI ▶</button>
 	</div>
-
-
-
-
-
-
+	<div class="results-bmi-page">
+		<h3>BMI Calculator</h3>
+		<section class="result">
+			<h5>YOUR BMI</h5>
+			<div class="result-display">
+				<img src="assets/semicircleblue.svg" alt="semicircle">
+				<div class="bmi-text">
+					<h3>18.0</h3>
+					<p>UNDERWEIGHT</p>
+				</div>
+			</div>
+		</section>
+		<section class="detailed-results">
+			<h5>DETAILED RESULTS</h5>
+			<div class="details">
+				<p>Based on the information entered, your body mass
+					index (BMI) is <b>18.0</b>, indicating your weight is in the
+					Underweight category for adults of your height.
+				</p>
+			</div>
+		</section>
+		<section class="results-info">
+			<div class="info">
+				<p>Underweight</p>
+				<p>Below 18.5</p>
+				<img src="assets/minusblue.svg" alt="minus">
+			</div>
+			<div class="info">
+				<p>Normal</p>
+				<p>18.5 to 24.9</p>
+				<img src="assets/minusgreen.svg" alt="minus">
+			</div>
+			<div class="info">
+				<p>Overweight</p>
+				<p>24.9 to 29.9</p>
+				<img src="assets/minusorange.svg" alt="minus">
+			</div>
+			<div class="info">
+				<p>Obese</p>
+				<p>30 or greater</p>
+				<img src="assets/minusred.svg" alt="minus">
+			</div>
+		</section>
+		<button class="edit-info-btn">◀ Edit Information</button>
+	</div>
 
 
 
