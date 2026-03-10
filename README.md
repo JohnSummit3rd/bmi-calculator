@@ -1,4 +1,4 @@
-# 💻 BMI Calculator
+# 🧮 BMI Calculator
 A responsive web application that calculates a person's BMI through the user providing their gender, age, height and weight. Built with basic HTML, CSS and JavaScript.
 
 ## 🔧 Technologies
